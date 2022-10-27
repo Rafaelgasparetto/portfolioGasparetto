@@ -1,0 +1,21 @@
+footer{
+    width: auto;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(233, 233, 233);
+}
+
+div:first-child img{
+    width: 150px;
+    height: 150px;
+}
+
+div:last-child{
+    margin-right: 1%;
+}
+
+div:last-child img{
+    width: 65px;
+    height: 65px;
+}
