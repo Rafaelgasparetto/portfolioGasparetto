@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 import { Router } from '@angular/router';
 import { UsuarioInterface } from '../model/usuario.model';
+import { LocalStorageService } from '../service/localStorage-service/local-storage.service';
 import { UsuarioService } from '../service/usuario-service/usuario.service';
 
 
@@ -23,6 +24,7 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private usuarioService: UsuarioService,
     private router: Router,
+    private localStorage: LocalStorageService
     ) { }
 
 
@@ -34,7 +36,7 @@ export class LoginComponent implements OnInit {
       next: (usuarios: UsuarioInterface[]) => {
         this.usuarios = usuarios;
         console.log(usuarios);
-        
+      
       },
       error:() => {
         console.log("Erro ao ler usuarios");
@@ -54,24 +56,34 @@ export class LoginComponent implements OnInit {
 
     const usuario:UsuarioInterface = {id: id, nome: nome, sexo: sexo, adm: adm};
 
-    console.log(id);
-    
-    console.log(nome);
-    console.log(sexo);
+    if(sexo == 'homem' || sexo == 'mulher' || sexo == 'semSexoDefinido'){
 
-    this.nome = nome; // atribuição para a variavel global
-    this.sexo = sexo; //atribuição para a variavel global
-    
+      console.log(id);
+      console.log(nome);
+      console.log(sexo);
 
-    this.usuarioService.salvarUsuario(usuario).subscribe({
-     next: () =>{
-      console.log("Cadastrado Com sucesso");
-      this.router.navigate(['/home']); //redirecionando para a pagina home
-     },
-     error: () => {
-      console.log("erro ao cadastrar");
-     } 
-    })
+      this.nome = nome; // atribuição para a variavel global
+      this.sexo = sexo; //atribuição para a variavel global
+
+      this.localStorage.SalvarId(usuario.id) // puxar id do usuario logado
+
+      this.localStorage.SalvarNome(usuario.nome) // puxar nome do usuario logado
+  
+      this.localStorage.SalvarSexo(usuario.sexo) // puxar sexo do usuario logado
+
+
+      this.usuarioService.salvarUsuario(usuario).subscribe({
+        next: () =>{
+         console.log("Cadastrado Com sucesso");
+         this.router.navigate(['/home']); //redirecionando para a pagina home
+        },
+        error: () => {
+         console.log("erro ao cadastrar");
+        } 
+      })
+
+    }
+
 
 
 

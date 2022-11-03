@@ -26,10 +26,10 @@
                     <ng-template matStepLabel>Como voce se indentifica?</ng-template>
                     <mat-form-field>
                         <input class="hide" matInput  >
-                        <mat-radio-group aria-label="Select an option" formControlName="sexo">
-                            <mat-radio-button value="homem">Homem</mat-radio-button>
-                            <mat-radio-button value="mulher">Mulher</mat-radio-button>
-                            <mat-radio-button value="semSexoDefinido">Não quero me indentificar</mat-radio-button>
+                        <mat-radio-group aria-label="Select an option" formControlName="sexo" required>
+                            <mat-radio-button value="homem" checked="false">Homem</mat-radio-button>
+                            <mat-radio-button value="mulher" checked="false">Mulher</mat-radio-button>
+                            <mat-radio-button value="semSexoDefinido" checked="true" >Não quero me indentificar</mat-radio-button>
                         </mat-radio-group>
                     </mat-form-field>
                     <div>
@@ -43,7 +43,7 @@
                     <p>Obrigado por se indentificar.</p>
                     <div>
                         <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button type="submit" [disabled]="!firstFormGroup.valid" (click)="salvarDadosUsuario()">Home</button>
+                        <button mat-button type="submit" [disabled]="!firstFormGroup.valid" [disabled]="!secondFormGroup.valid" (click)="salvarDadosUsuario()">Home</button>
                     </div>
                 </mat-step>
             </mat-vertical-stepper>

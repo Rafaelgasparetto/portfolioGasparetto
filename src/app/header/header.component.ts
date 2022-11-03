@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LocalStorageService } from '../service/localStorage-service/local-storage.service';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +8,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor(public router: Router) { }
+  adm:boolean=true;
+  constructor(
+    public router: Router,
+    private localStorage: LocalStorageService
+  ) { }
 
   ngOnInit(): void {
+    //variavel para ver se o usuario é adm ou não
+    this.localStorage.GetAdmin().subscribe(Dadoadm=>{
+      this.adm=Dadoadm
+    })
   }
 
   Sair(){
+    this.localStorage.Clear()
     this.router.navigate(['../login']);
   }
 

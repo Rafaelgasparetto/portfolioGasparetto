@@ -23,13 +23,27 @@ export class LocalStorageService {
   }
 
   // pegar o id do usuario logado
-  id=0
+  id=0;
+  nome='';
+  sexo=''; 
   DataId= new BehaviorSubject<number>(this.id)
+  nomeUsuario = new BehaviorSubject<string>(this.nome)
+  sexoUsuario = new BehaviorSubject<string>(this.sexo)
 
   //------função para salvar o valor do id
   SalvarId($data:number){
     this.storage.setItem('id',`${$data}`)
     this.DataId.next($data)
+  }
+
+  SalvarNome($data:string){
+    this.storage.setItem('nome',`${$data}`)
+    this.nomeUsuario.next($data)
+  }
+
+  SalvarSexo($data:string){
+    this.storage.setItem('sexo',`${$data}`)
+    this.sexoUsuario.next($data)
   }
 
   //-----função para pegar o valor do id

@@ -1,6 +1,9 @@
 <section>
     
-    <h1>Olá {{usuario}} Seja Bem vindo ao meu portfólio</h1>
+    <h1 *ngIf="sexoUsuario == 'homem'" >Olá {{nomeUsuario}}, Seja Bem vindo ao meu portfólio</h1>
+    <h1 *ngIf="sexoUsuario == 'mulher'" >Olá {{nomeUsuario}}, Seja Bem vinda ao meu portfólio</h1>
+    <h1 *ngIf="sexoUsuario == 'semSexoDefinido'" >Olá {{nomeUsuario}}, Seja Bem vindx ao meu portfólio</h1>
+    
 
     <article>
         <p> 

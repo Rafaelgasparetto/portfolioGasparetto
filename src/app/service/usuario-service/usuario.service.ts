@@ -44,7 +44,9 @@ export class UsuarioService {
     return this.httpClient.post<UsuarioInterface>(this.url,objeto)
   }
 
-
+  lerUsuarioById(id:number):Observable<UsuarioInterface>{
+    return this.httpClient.get<UsuarioInterface>(`${this.url}/${id}`)
+  }
 
 
 }
