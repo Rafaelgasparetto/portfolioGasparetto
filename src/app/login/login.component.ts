@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
         console.log("Erro ao ler usuarios");
       }
     })
-  
+    
   }
 
 
@@ -56,23 +56,23 @@ export class LoginComponent implements OnInit {
 
     const usuario:UsuarioInterface = {id: id, nome: nome, sexo: sexo, adm: adm};
 
-    this.nome = nome; // atribuição para a variavel global
-    this.sexo = sexo; //atribuição para a variavel global
 
-    this.localStorage.SalvarId(usuario.id) // puxar id do usuario logado
 
-    this.localStorage.SalvarNome(usuario.nome) // puxar nome do usuario logado
+    if(sexo == 'homem' || sexo == 'mulher' || sexo == 'semSexoDefinido'){ //verificar se esta com bug
 
-    this.localStorage.SalvarSexo(usuario.sexo) // puxar sexo do usuario logado
+      this.nome = nome; // atribuição para a variavel global
+      this.sexo = sexo; //atribuição para a variavel global
+  
+      this.localStorage.SalvarId(usuario.id) // puxar id do usuario logado
+  
+      this.localStorage.SalvarNome(usuario.nome) // puxar nome do usuario logado
+  
+      this.localStorage.SalvarSexo(usuario.sexo) // puxar sexo do usuario logado
 
-    if(sexo == 'homem' || sexo == 'mulher' || sexo == 'semSexoDefinido'){
 
       console.log(id);
       console.log(nome);
       console.log(sexo);
-
-
-
 
       this.usuarioService.salvarUsuario(usuario).subscribe({
         next: () =>{

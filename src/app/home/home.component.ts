@@ -46,14 +46,15 @@ export class HomeComponent implements OnInit {
         error: () =>{
 
           console.log("falha");
-  
+          
+          console.log(this.nomeUsuario);
+          console.log(this.sexoUsuario);
         }
         
       })
     })
 
-    console.log(this.nomeUsuario);
-    console.log(this.sexoUsuario);
+
     
     
 
