@@ -1,0 +1,16 @@
+{
+    "usuario": [
+        {
+           "id":1,
+           "nome":"Rafael",
+           "sexo":"masculino",
+           "adm": true
+        },
+        {
+            "id":2,
+            "nome":"oi",
+            "sexo":"masculino",
+            "adm": false  
+        }
+    ]
+}

@@ -1,14 +1,14 @@
-<header>
+<header *ngIf="router.routerState.snapshot.url == '/home' || router.routerState.snapshot.url == '/projetos' || router.routerState.snapshot.url == '/curriculo' ">
 
     <div>
         <img src="../../assets/src img logo/LogoProfisorio.gif" alt="">
     </div>
 
-    <nav>
+    <nav *ngIf="router.routerState.snapshot.url == '/home' || router.routerState.snapshot.url == '/projetos' || router.routerState.snapshot.url == '/curriculo' ">
         <ul>
 
             <li>
-                <a href="#">Home</a>
+                <a routerLink="../home/">Home</a>
             </li>
 
             <li>
@@ -24,10 +24,22 @@
             </li>
 
             <li>
-                <a href="#">Login</a>
+                <a routerLink="../login/" (click)="Sair()">Sair</a>
             </li>
 
         </ul>
     </nav>
+
+
     
+</header>
+
+<header id="header_login" *ngIf="router.routerState.snapshot.url == '/login'">
+
+    <img src="../../assets/src img logo/LogoProfisorio.gif" alt="">
+
+    <nav id="nav_login">
+        <h1>Olá! vamos nos conhecer? <br> Meu nome é Rafael Gasparetto, e o seu?</h1>
+    </nav>
+
 </header>
