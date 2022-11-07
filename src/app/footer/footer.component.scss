@@ -3,7 +3,13 @@ footer{
     height: 150px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(233, 233, 233);
+    background-color: #444;
+}
+
+#footerLogin{
+    display: flex;
+    justify-content: center;
+    background-color: #444;
 }
 
 div:first-child img{

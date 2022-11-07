@@ -1,8 +1,17 @@
-<footer>
+<footer *ngIf="router.routerState.snapshot.url == '/home' || router.routerState.snapshot.url == '/projetos' || router.routerState.snapshot.url == '/curriculo' ">
+
+    <div >
+        <img src="../../assets/src img logo/Logo.gif" alt="" >
+    </div>
 
     <div>
-        <img src="../../assets/src img logo/LogoProfisorio.gif" alt="">
+        <img src="../../assets/src img logo/logo linkedin.png" alt="">
+        <img src="../../assets/src img logo/GitHub-Logo.png" alt="">
     </div>
+
+</footer>
+
+<footer *ngIf="router.routerState.snapshot.url == '/login' " id="footerLogin">
 
     <div>
         <img src="../../assets/src img logo/logo linkedin.png" alt="">
