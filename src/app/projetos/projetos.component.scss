@@ -9,7 +9,7 @@ section{
 }
 
 h1{
-    color: rgb(219, 186, 255);
+    color: #dbbaff;
 }
 
 article{
@@ -30,7 +30,7 @@ mat-card{
     flex-direction:column;
     justify-content: center;
     justify-items: center;
-    margin-top: 1%;
+    // margin-top: 1%;
 }
 
 mat-card img{
@@ -44,7 +44,7 @@ mat-card img{
 }
 
 mat-card:hover{
-    border: 1px solid rgb(219, 186, 255);
+    border: 1px solid #dbbaff;
     border-radius: 0px;
     transition: all 0.3s ease-out;
     transform: translateY(-10px) scale(1.005) translateZ(0);
@@ -56,4 +56,8 @@ mat-card:hover{
     display: flex;
     flex-direction: column;
     
+}
+
+a{
+    text-decoration: none;
 }

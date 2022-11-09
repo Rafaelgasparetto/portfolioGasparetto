@@ -19,6 +19,11 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjetosComponent } from './projetos/projetos.component';
+import { DivinaFashionComponent } from './projetosConcluidos/divina-fashion/divina-fashion.component';
+import { JogoAdvinhaComponent } from './projetosConcluidos/jogo-advinha/jogo-advinha.component';
+import { SyncTurComponent } from './projetosConcluidos/sync-tur/sync-tur.component';
+import { LocadoraComponent } from './projetosConcluidos/locadora/locadora.component';
+import { LocCarComponent } from './projetosConcluidos/loc-car/loc-car.component';
 
 
 
@@ -29,7 +34,12 @@ import { ProjetosComponent } from './projetos/projetos.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    DivinaFashionComponent,
+    JogoAdvinhaComponent,
+    SyncTurComponent,
+    LocadoraComponent,
+    LocCarComponent
   ],
   imports: [
     BrowserModule,

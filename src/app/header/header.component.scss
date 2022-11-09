@@ -33,12 +33,12 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: rgb(143, 62, 155);
+    color: #dbbaff;
     font-size:medium;
 }
 
 nav li a:hover{
-    color: rgb(219, 186, 255) !important;
+    color: #8f3e9b !important;
     font-size:larger !important;
 }
 
@@ -48,7 +48,7 @@ nav li a:hover{
     display: flex;
     justify-content: center;
     background-color: rgb(68, 68, 68);
-    color: rgb(160, 104, 160);
+    color: #dbbaff;
 }
 
 #nav_login{
@@ -60,3 +60,5 @@ nav li a:hover{
     margin-right: 1%;   
     
 }
+
+

@@ -1,0 +1,34 @@
+section{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5a5959;
+}
+
+h1{
+    color: #dbbaff;
+}
+
+article{
+    color: #bcbcbc;
+}
+
+mat-card-title{
+    color: #dbbaff;
+}
+
+mat-card-content{
+    color: #bcbcbc
+}
+
+.example-card {
+    max-width: 600px;
+    margin-bottom: 10%;
+}
+
+.example-header-image {
+    background-image: url("../../../assets/Projetos/CARDSPROJETOS/LogoDivina.png");
+    background-size:contain;
+}
