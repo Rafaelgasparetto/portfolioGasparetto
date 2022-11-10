@@ -24,6 +24,8 @@ import { JogoAdvinhaComponent } from './projetosConcluidos/jogo-advinha/jogo-adv
 import { SyncTurComponent } from './projetosConcluidos/sync-tur/sync-tur.component';
 import { LocadoraComponent } from './projetosConcluidos/locadora/locadora.component';
 import { LocCarComponent } from './projetosConcluidos/loc-car/loc-car.component';
+import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
+import { CurriculoComponent } from './curriculo/curriculo.component';
 
 
 
@@ -39,7 +41,9 @@ import { LocCarComponent } from './projetosConcluidos/loc-car/loc-car.component'
     JogoAdvinhaComponent,
     SyncTurComponent,
     LocadoraComponent,
-    LocCarComponent
+    LocCarComponent,
+    ApresentacaoComponent,
+    CurriculoComponent
   ],
   imports: [
     BrowserModule,
