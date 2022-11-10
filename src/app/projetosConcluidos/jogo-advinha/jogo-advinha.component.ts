@@ -12,4 +12,8 @@ export class JogoAdvinhaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  irAoTopo(){
+    window.scrollTo(0,0);
+  }
+
 }
