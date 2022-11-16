@@ -1,6 +1,7 @@
 <header *ngIf="router.routerState.snapshot.url == '/home' || router.routerState.snapshot.url == '/projetos' || router.routerState.snapshot.url == '/curriculo' 
     || router.routerState.snapshot.url == '/divina-fashion' || router.routerState.snapshot.url == '/jogo-advinha' || router.routerState.snapshot.url == '/sync-tur'
-    || router.routerState.snapshot.url == '/locadora' || router.routerState.snapshot.url == '/loc-car' ">
+    || router.routerState.snapshot.url == '/locadora' || router.routerState.snapshot.url == '/loc-car' || router.routerState.snapshot.url == '/bolos-julia' 
+    || router.routerState.snapshot.url == '/apresentacao' ">
 
     <div>
         <a routerLink="../home">
@@ -10,7 +11,8 @@
 
     <nav *ngIf="router.routerState.snapshot.url == '/home' || router.routerState.snapshot.url == '/projetos' || router.routerState.snapshot.url == '/curriculo' 
     || router.routerState.snapshot.url == '/divina-fashion' || router.routerState.snapshot.url == '/jogo-advinha' || router.routerState.snapshot.url == '/sync-tur'
-    || router.routerState.snapshot.url == '/locadora' || router.routerState.snapshot.url == '/loc-car' ">
+    || router.routerState.snapshot.url == '/locadora' || router.routerState.snapshot.url == '/loc-car' || router.routerState.snapshot.url == '/bolos-julia'
+    || router.routerState.snapshot.url == '/apresentacao' ">
         <ul>
 
             <li>
@@ -22,11 +24,11 @@
             </li>
 
             <li>
-                <a href="#">Apresentação</a>
+                <a routerLink="../apresentacao">Apresentação</a>
             </li>
 
             <li>
-                <a href="#">Currículo</a>
+                <a routerLink="../curriculo">Currículo</a>
             </li>
 
             <li>

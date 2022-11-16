@@ -26,6 +26,7 @@ import { LocadoraComponent } from './projetosConcluidos/locadora/locadora.compon
 import { LocCarComponent } from './projetosConcluidos/loc-car/loc-car.component';
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { CurriculoComponent } from './curriculo/curriculo.component';
+import { BolosJuliaComponent } from './projetosConcluidos/bolos-julia/bolos-julia.component';
 
 
 
@@ -43,7 +44,8 @@ import { CurriculoComponent } from './curriculo/curriculo.component';
     LocadoraComponent,
     LocCarComponent,
     ApresentacaoComponent,
-    CurriculoComponent
+    CurriculoComponent,
+    BolosJuliaComponent
   ],
   imports: [
     BrowserModule,

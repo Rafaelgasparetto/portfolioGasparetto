@@ -5,15 +5,44 @@
   <article>
     <p>Este projeto foi desenvolvido em um curso de formação angular para melhorar a habilidade com: <br></p>  
     <ul>
+
       <li>HTML</li>
       <li>CSS</li>
-      <li>Responsividade
+      <li>JavaScript</li>
+      <li>TypeScript
         <ul>
-          <li>Desktop</li>
-          <li>Tablet</li>
-          <li>Mobile</li> 
+          <li>Validators</li>
+          <li>Routes</li>
+          <li>Models</li>
+          <li>Service</li>
+          <li>CRUD</li>
         </ul>
       </li>
+      <li>Angular
+        <ul>
+          <li>Angular material
+            <ul>
+              <li>Card</li>
+              <li>Dialog</li>
+              <li>Form field</li>
+              <li>matInput</li>
+              <li>mat-label</li>
+              <li>mat-select</li>
+              <li>Progress Spinner</li>
+              <li>SnackBar</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>JSON-server</li>
+      <li>MokAPI</li>
+      <li>AWS Amazon
+        <ul>
+          <li>bucket</li>
+          <li>S3</li>
+        </ul>
+      </li>
+      
     </ul>  
   </article>
 
@@ -22,13 +51,14 @@
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Pagina Home</mat-card-title>
-        <mat-card-subtitle>Projeto Filme Collection</mat-card-subtitle>
+        <mat-card-title>Projeto Filme Collection</mat-card-title>
+        <mat-card-subtitle>Pagina Home</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="../../../assets/Projetos/Imagens dos projetos/Projeto Locadora/p_Home.png" alt="Imagem pagina home">
       <mat-card-content>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati reiciendis optio aliquam. Tempora maxime assumenda sequi nihil ab accusamus quas neque odio laboriosam explicabo, fugit repellat corrupti ea ex!
+          Está é a pagina home da locadora com header/footer como component e a pagina com sistemas de routes - router-outlet. <br>
+          Foi usado Mat-card do angular material para fazer o card Filmes e categorias. Ali aonde está o logo Filmes colletion, tem uma mensagem "conheça nossa coletânea" ao cada pagina ela vai se alterando como pode ver nas proximas imagens.
         </p>
       </mat-card-content>
     </mat-card>
@@ -40,13 +70,15 @@
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Pagina Cadastro de usuários</mat-card-title>
-        <mat-card-subtitle>Projeto Filme Collection</mat-card-subtitle>
+        <mat-card-title>Projeto Filme Collection</mat-card-title>
+        <mat-card-subtitle>Pagina Cadastro de usuários</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="../../../assets/Projetos/Imagens dos projetos/Projeto Locadora/p_Cadastro.png" alt="Imagem pagina cadastro de usúarios">
       <mat-card-content>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati reiciendis optio aliquam. Tempora maxime assumenda sequi nihil ab accusamus quas neque odio laboriosam explicabo, fugit repellat corrupti ea ex!
+          Os campos do form são com mat-label / matInput estilizados de acordo com o figma. <br>
+          Nos campos como podem ver, esta com os validators e quando todos os campos estiverem válidos o botão fica habilitado para prosseguir o cadastro de usuário. <br> <br>
+          OBS: no header para trocar de mensagem a cada pagina utilizei o *ngIf
         </p>
       </mat-card-content>
     </mat-card>
@@ -58,13 +90,16 @@
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Dialog do editar usuários</mat-card-title>
-        <mat-card-subtitle>Projeto Filme Collection</mat-card-subtitle>
+        <mat-card-title>Projeto Filme Collection</mat-card-title>
+        <mat-card-subtitle>Dialog do editar usuários</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="../../../assets/Projetos/Imagens dos projetos/Projeto Locadora/d_Cadastro.png" alt="Imagem do dialog editar usuários">
       <mat-card-content>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati reiciendis optio aliquam. Tempora maxime assumenda sequi nihil ab accusamus quas neque odio laboriosam explicabo, fugit repellat corrupti ea ex!
+          Em cada card do usuário tem o botão de editar, e quando o usuário clica nele aparece um dialog para fazer a alteração do usuário selecionado, com o botão de atualizar ou cancelar.<br> <br>
+          OBS:
+          O dialog não foi exigido no desafio, eu achei importante ter o dialog para o usuário pois facilita a visualização do mesmo, a estilização do dialog foi por minha conta, seguindo os estilos e cores da pagina. 
+
         </p>
       </mat-card-content>
     </mat-card>
@@ -76,13 +111,14 @@
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Pagina cadastro de gêneros</mat-card-title>
-        <mat-card-subtitle>Projeto Filme Collection</mat-card-subtitle>
+        <mat-card-title>Projeto Filme Collection</mat-card-title>
+        <mat-card-subtitle>Pagina cadastro de gêneros</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="../../../assets/Projetos/Imagens dos projetos/Projeto Locadora/p_Generos.png" alt="Imagem da pagina cadastrar gêneros dos filmes">
       <mat-card-content>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati reiciendis optio aliquam. Tempora maxime assumenda sequi nihil ab accusamus quas neque odio laboriosam explicabo, fugit repellat corrupti ea ex!
+          Nesta pagina, como a pagina de cadastro de usuario tem validators e desabilita o botão quando o campo for valido. <br>
+          Achei importante trazer esse fluxo de apresentação pois na parte de filmes tem um campo de select que vai mostrar os generos cadastrados em um select para cadastrar o filme.
         </p>
       </mat-card-content>
     </mat-card>
@@ -94,13 +130,13 @@
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Dialog editar gêneros</mat-card-title>
-        <mat-card-subtitle>Projeto Filme Collection</mat-card-subtitle>
+        <mat-card-title>Projeto Filme Collection</mat-card-title>
+        <mat-card-subtitle>Dialog editar gêneros</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="../../../assets/Projetos/Imagens dos projetos/Projeto Locadora/d_generos.png" alt="Dialog editar gêneros">
       <mat-card-content>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati reiciendis optio aliquam. Tempora maxime assumenda sequi nihil ab accusamus quas neque odio laboriosam explicabo, fugit repellat corrupti ea ex!
+          Ao clicar em editar do gênero aparece um dialog para fazer a alteração com validators e required, junto com dois botões de cancelar e editar (o botão editar está bloqueado porque o campo gênero esta inválido).
         </p>
       </mat-card-content>
     </mat-card>
@@ -112,13 +148,14 @@
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Pagina de filmes</mat-card-title>
-        <mat-card-subtitle>Projeto Filme Collection</mat-card-subtitle>
+        <mat-card-title>Projeto Filme Collection</mat-card-title>
+        <mat-card-subtitle>Pagina de filmes cadastrados</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="../../../assets/Projetos/Imagens dos projetos/Projeto Locadora/p_Filmes.png" alt="Imagem da pagina filmes">
       <mat-card-content>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati reiciendis optio aliquam. Tempora maxime assumenda sequi nihil ab accusamus quas neque odio laboriosam explicabo, fugit repellat corrupti ea ex!
+          Página de filmes cadastrados. <br>
+          Com validators / required e button disable != formGroup.valid
         </p>
       </mat-card-content>
     </mat-card>
@@ -130,13 +167,14 @@
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Pagina de filmes com select gêneros</mat-card-title>
-        <mat-card-subtitle>Projeto Filme Collection</mat-card-subtitle>
+        <mat-card-title>Projeto Filme Collection</mat-card-title>
+        <mat-card-subtitle>Pagina de filmes com select gêneros</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="../../../assets/Projetos/Imagens dos projetos/Projeto Locadora/p_filmes_select.png" alt="Imagem da pagina filmes com o select gêneros">
       <mat-card-content>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati reiciendis optio aliquam. Tempora maxime assumenda sequi nihil ab accusamus quas neque odio laboriosam explicabo, fugit repellat corrupti ea ex!
+          Como eu dei um spoiler em nas imagens acima, o select está puxando os valores do componet Generos cadastrados. <br>
+          Na imagem eu estou fazendo um cadastro de um filme que eu gosto muito kkk
         </p>
       </mat-card-content>
     </mat-card>
@@ -148,13 +186,31 @@
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Pagina de filmes</mat-card-title>
-        <mat-card-subtitle>Projeto Filme Collection</mat-card-subtitle>
+        <mat-card-title>Projeto Filme Collection</mat-card-title>
+        <mat-card-subtitle>Dialog para editar filme</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="../../../assets/Projetos/Imagens dos projetos/Projeto Locadora/d_Filmes_editar.png" alt="Imagem da pagina filmes">
+      <img mat-card-image src="../../../assets/Projetos/Imagens dos projetos/Projeto Locadora/d_Filmes_editar.png" alt="Imagem do dialog para editar filme">
       <mat-card-content>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia obcaecati reiciendis optio aliquam. Tempora maxime assumenda sequi nihil ab accusamus quas neque odio laboriosam explicabo, fugit repellat corrupti ea ex!
+         Dialog do Editar do filme
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+  <div>
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Projeto Filme Collection</mat-card-title>
+        <mat-card-subtitle>Figma do Projeto </mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../../assets/Projetos/CARDSPROJETOS/FigmaLocadora.png" alt="Imagem do dialog para editar filme">
+      <mat-card-content>
+        <p>
+          O layout do projeto foi baseado neste Figma
         </p>
       </mat-card-content>
     </mat-card>
