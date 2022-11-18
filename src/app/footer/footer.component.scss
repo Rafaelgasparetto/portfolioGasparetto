@@ -3,13 +3,15 @@ footer{
     height: 150px;
     display: flex;
     justify-content: space-between;
-    background-color: #444;
+    // background-color: #444;
+    background-color: black;
 }
 
 #footerLogin{
     display: flex;
     justify-content: center;
     background-color: #444;
+    // background-color: black;
 }
 
 div:first-child img{

@@ -4,7 +4,8 @@ section{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #444;
+    // background-color: #444;
+    background-color: black;
     justify-content: space-evenly;
 }
 
@@ -22,10 +23,10 @@ article{
 }
 
 mat-card{
-    // width: 200px;
-    // height: 200px;
+    width: auto;
+    height: auto;
     background-color: black; 
-    border-radius: 15px;
+    border-radius: 50px;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -44,12 +45,13 @@ mat-card img{
 }
 
 mat-card:hover{
-    border: 1px solid #dbbaff;
+    border: 2px solid #dbbaff;
     border-radius: 0px;
     transition: all 0.3s ease-out;
     transform: translateY(-10px) scale(1.005) translateZ(0);
-    box-shadow: 0 24px 36px rgba(255, 255, 255, 0.11);
-    color: rgb(219, 186, 255);
+    // box-shadow: 0 24px 36px rgba(255, 255, 255, 0.11);
+    box-shadow: 0 24px 36px rgb(219, 186, 255, 0.20);
+    color: #dbbaff;
 }
 
 .divCard{
