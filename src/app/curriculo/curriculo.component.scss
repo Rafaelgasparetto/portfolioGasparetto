@@ -12,4 +12,47 @@ section{
 h1{
     margin-top: 2%;
     color: #dbbaff;
+    font-size: 30px;
 }
+
+h3{
+    color: #dbbaff;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p{
+    color: white;
+}
+
+mat-panel-title{
+    color: #dbbaff;
+    font-size: large;
+}
+
+// mat-panel-title img{
+//     width: 50px;
+//     height: 50px;
+// }
+
+mat-panel-description{
+    color: rgb(40, 40, 40);
+}
+
+#perfilAccor{
+    background-color: rgb(129, 129, 131); 
+}
+
+hr{
+    color: #dbbaff;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+

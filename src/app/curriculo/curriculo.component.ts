@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurriculoComponent implements OnInit {
 
+  panelOpenStatePerfil = false;
+  panelOpenStateExp = false;
+  panelOpenStateEducacao = false;
+  panelOpenStateCursos = false;
+  panelOpenStateDown = false;
+
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }

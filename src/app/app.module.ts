@@ -27,6 +27,7 @@ import { LocCarComponent } from './projetosConcluidos/loc-car/loc-car.component'
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { CurriculoComponent } from './curriculo/curriculo.component';
 import { BolosJuliaComponent } from './projetosConcluidos/bolos-julia/bolos-julia.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 
@@ -60,7 +61,8 @@ import { BolosJuliaComponent } from './projetosConcluidos/bolos-julia/bolos-juli
     MatCheckboxModule,
     MatStepperModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatExpansionModule
 
   ],
   providers: [],
