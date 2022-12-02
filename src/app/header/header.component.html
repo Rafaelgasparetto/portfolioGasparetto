@@ -1,7 +1,9 @@
-<header *ngIf="router.routerState.snapshot.url == '/home' || router.routerState.snapshot.url == '/projetos' || router.routerState.snapshot.url == '/curriculo' 
+<mat-toolbar *ngIf="router.routerState.snapshot.url == '/home' || router.routerState.snapshot.url == '/projetos' || router.routerState.snapshot.url == '/curriculo' 
     || router.routerState.snapshot.url == '/divina-fashion' || router.routerState.snapshot.url == '/jogo-advinha' || router.routerState.snapshot.url == '/sync-tur'
     || router.routerState.snapshot.url == '/locadora' || router.routerState.snapshot.url == '/loc-car' || router.routerState.snapshot.url == '/bolos-julia' 
     || router.routerState.snapshot.url == '/apresentacao' ">
+
+
 
     <div>
         <a routerLink="../home">
@@ -9,38 +11,92 @@
         </a>
     </div>
 
-    <nav *ngIf="router.routerState.snapshot.url == '/home' || router.routerState.snapshot.url == '/projetos' || router.routerState.snapshot.url == '/curriculo' 
-    || router.routerState.snapshot.url == '/divina-fashion' || router.routerState.snapshot.url == '/jogo-advinha' || router.routerState.snapshot.url == '/sync-tur'
-    || router.routerState.snapshot.url == '/locadora' || router.routerState.snapshot.url == '/loc-car' || router.routerState.snapshot.url == '/bolos-julia'
-    || router.routerState.snapshot.url == '/apresentacao' ">
-        <ul>
 
-            <li>
-                <a routerLink="../home/">Home</a>
-            </li>
 
-            <li>
-                <a routerLink="../projetos">Projetos</a>
-            </li>
+    <div id="navPrincipal">
 
-            <li>
-                <a routerLink="../apresentacao">Apresentação</a>
-            </li>
+        <nav  *ngIf="router.routerState.snapshot.url == '/home' || router.routerState.snapshot.url == '/projetos' || router.routerState.snapshot.url == '/curriculo' 
+        || router.routerState.snapshot.url == '/divina-fashion' || router.routerState.snapshot.url == '/jogo-advinha' || router.routerState.snapshot.url == '/sync-tur'
+        || router.routerState.snapshot.url == '/locadora' || router.routerState.snapshot.url == '/loc-car' || router.routerState.snapshot.url == '/bolos-julia'
+        || router.routerState.snapshot.url == '/apresentacao' ">
+ 
 
-            <li>
-                <a routerLink="../curriculo">Currículo</a>
-            </li>
+                <!-- <ul class="listNav" >
 
-            <li>
-                <a routerLink="../login/" (click)="Sair()">Sair</a>
-            </li>
+                    <li>
+                        <a routerLink="../home/">Home</a>
+                    </li>
+    
+                    <li>
+                        <a routerLink="../projetos">Projetos</a>
+                    </li>
+    
+                    <li>
+                        <a routerLink="../apresentacao">Apresentação</a>
+                    </li>
+    
+                    <li>
+                        <a routerLink="../curriculo">Currículo</a>
+                    </li>
+    
+                    <li>
+                        <a routerLink="../login/" (click)="Sair()">Sair</a>
+                    </li>
+    
+                </ul> -->
+           
 
-        </ul>
-    </nav>
+            <mat-accordion >
+                <mat-expansion-panel (opened)="listNav = true"
+                                      (closed)="listNav = false">
+                  <mat-expansion-panel-header>
+                    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                        <mat-icon id="menu">menu</mat-icon>
+                        <span>Menu</span>  
+                    </button>
+
+                  </mat-expansion-panel-header>
+                  <ul class="listNav" >
+
+                    <li>
+                        <a routerLink="../home/"><mat-icon>home</mat-icon> <p>Home</p></a>
+                        
+                    </li>
+    
+                    <li>
+                        <a routerLink="../projetos"> <mat-icon>important_devices</mat-icon> <p>Projetos</p> </a>
+                    </li>
+    
+                    <li>
+                        <a routerLink="../apresentacao"> <mat-icon> import_contacts</mat-icon>  <p>Sobre mim</p> </a>
+                    </li>
+    
+                    <li>
+                        <a routerLink="../curriculo"><mat-icon>portrait</mat-icon> <p>Currículo</p> </a>
+                    </li>
+    
+                    <li>
+                        <a routerLink="../login/" (click)="Sair()"> <mat-icon>exit_to_app</mat-icon> <p>Sair</p> </a>
+                    </li>
+    
+                </ul>
+
+
+
+                </mat-expansion-panel>
+
+              </mat-accordion>
+
+
+        </nav>
+
+
+
+    </div>
 
 
     
-</header>
+</mat-toolbar>
 
 <header id="header_login" *ngIf="router.routerState.snapshot.url == '/login'">
 

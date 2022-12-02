@@ -9,6 +9,7 @@ import { LocalStorageService } from '../service/localStorage-service/local-stora
 })
 export class HeaderComponent implements OnInit {
   adm:boolean=true;
+  listNav = false;
   constructor(
     public router: Router,
     private localStorage: LocalStorageService
@@ -25,6 +26,9 @@ export class HeaderComponent implements OnInit {
     this.localStorage.Clear()
     this.router.navigate(['../login']);
   }
+
+
+  
 
 
 

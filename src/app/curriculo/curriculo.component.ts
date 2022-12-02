@@ -12,12 +12,17 @@ export class CurriculoComponent implements OnInit {
   panelOpenStateEducacao = false;
   panelOpenStateCursos = false;
   panelOpenStateDown = false;
+  panelOpenStateCerti = false;
 
 
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  irAoTopo(){
+    window.scrollTo(0,0);
   }
 
 

@@ -1,184 +1,218 @@
 <section>
 
-    <h1>Curriculo</h1>
+  <h1>Curriculo</h1>
 
-    <main>
-        <mat-accordion >
-            <mat-expansion-panel (opened)="panelOpenStatePerfil = true"
-                                 (closed)="panelOpenStatePerfil = false" id="perfilAccor">
-              <mat-expansion-panel-header>
-                <mat-panel-title>
-                 <li>Perfil</li> 
-                </mat-panel-title>
-                <mat-panel-description>
-                    Clique para {{panelOpenStatePerfil ? 'fechar' : 'abrir'}}
-                </mat-panel-description>
-              </mat-expansion-panel-header>
+  <main>
+    <mat-accordion >
+      <mat-expansion-panel (opened)="panelOpenStatePerfil = true"
+                            (closed)="panelOpenStatePerfil = false" id="perfilAccor">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>face</mat-icon>  <span>Perfil</span>  
+          </mat-panel-title>
+          <mat-panel-description>
+              Clique para {{panelOpenStatePerfil ? 'fechar' : 'abrir'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
 
-              <h4>Transição de carreira</h4>
-              <h5>Area de TI</h5>
+        <h4>Transição de carreira</h4>
+        <h5>Area de TI</h5>
 
+        <p>
+          -Procuro uma Oportunidade para trabalhar com Front-end, tenho formação em Angular pela BRQ, e estou cursando atualmente uma formação em React, procuro sempre estudar nas horas livres</p>
+
+        <p>
+          -Tenho facilidade na autoaprendizagem, o que facilita quando o ensino é remoto em plataformas de ensino como Alura, Rocketseat, Udemy e mais.
+        </p>
+
+        <p>
+          -Tenho espírito colaborativo, muita vontade de ajudar e aprender, ótimo relacionamento interpessoal, prezo pelo trabalho em equipe, sou disciplinado, organizado e tenho habilidade para lidar com imprevistos
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <mat-accordion >
+      <mat-expansion-panel (opened)="panelOpenStateExp = true"
+                            (closed)="panelOpenStateExp = false" >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>extension</mat-icon> <span>Experiências</span>
+             
+          </mat-panel-title>
+          <mat-panel-description>
+              Clique para {{panelOpenStateExp ? 'fechar' : 'abrir'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <h4>Promotor de merchandising</h4>
+        <h5>Unilever Brasil -Dez/2020 - Atual</h5>
+
+        <p>
+          Responsável direto pelo atendimento e merchandising do cliente Assai Jaguaré, ajudando no sell in da Unilever no cliente, aumento de ticket médio na loja, Elaborar planilhas de desempenho de toda a equipe para melhor atingimento nas premiações do time. <br> 
+          Responsável pela confecção de backlight, o que ajuda a visibilidade e a venda dos produtos; <br>
+          - Atualmente elaborando um projeto de TI com base em cursos e faculdade que fiz para melhorar a comunicação do PDV com o escritório de merchandising da Unilever.
+        </p>
+
+        <hr size="1" width="80%" color="#dbbaff">
+
+        <h4>Freelancer jul/2018 - Fev/2019</h4>
+        <h5>Imobiliária / Loja Ortobom</h5>
+
+        <p>
+          - Imobiliária; Lançamento de Notas Fiscais em sistema integrado, extraindo relatórios de custos, desde taxas bancárias até bonificações
+          - Loja Ortobom: Auxiliar de loja, responsável pela organização do estoque, exposição e entrega de produtos até a instalação dos itens nos clientes <br>
+          - Atuação como motorista particular e ajudante de carga e descarga.
+        </p>
+
+        <hr size="1" width="80%" color="#dbbaff">
+
+        <h4>Promotor de vendas</h4>
+        <h5>Cagiu - Distribuidora da Danone Ltda (abr/2016 - jul/2018)</h5>
+
+        <p>
+          Responsável direto pelo atendimento e merchandising dos clientes potenciais da distribuidora com report direto para o Supervisor Geral e contato com a equipe de vendas; Realização de levantamento de oportunidade para aumento de vendas verificando rupturas dos produtos nos clientes; Negociação e montagem de pontos extras para maior visibilidade nas lojas; Pesquisas de mercado e tendências de vendas para viabilizar metas.
+        </p>
+
+        <hr size="1" width="80%" color="#dbbaff">
+
+        <h4>Promotor de vendas</h4>
+        <h5>Gasparetto & Vasco - Distribuidora da Danone Ltda (fev/2013 - nov/2015)</h5>
+
+        <p>
+          Responsável por controlar e movimentar itens críticos no PDV, para efetivação do FIFO nos clientes e na Distribuidora; Atuar diretamente no PDV, realizando abastecimento seguindo padrões e regras indicados pela indústria, gerando maior visibilidade da marca no mercado; Controlar todo o estoque da distribuidora, com report direto ao proprietário.
+        </p>
+
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <mat-accordion >
+      <mat-expansion-panel (opened)="panelOpenStateEducacao = true"
+                            (closed)="panelOpenStateEducacao = false"
+                            id="perfilAccor" >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>assignment</mat-icon>  <span>Educação</span> 
+          </mat-panel-title>
+          <mat-panel-description>
+              Clique para {{panelOpenStateEducacao ? 'fechar' : 'abrir'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <h4>Formação Acadêmica</h4>
+
+        <p>
+          -  Formado em Análise e Desenvolvimento de Sistemas <br>
+          Universidade Mogi das Cruzes – UMC
+        </p>
+
+        <hr size="1" width="80%" color="#dbbaff">
+
+        <h4>Inglês</h4>
+
+        <p>- CNA, nivel intermediário</p>
+        <p>Atualmente estou fazendo aulas particulares duas vezes na semana (segunda e quarta) </p>
+
+
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <mat-accordion >
+      <mat-expansion-panel (opened)="panelOpenStateCursos = true"
+                            (closed)="panelOpenStateCursos = false" >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>archive</mat-icon> <span>Cursos e Especializações</span>
+            
+          </mat-panel-title>
+          <mat-panel-description>
+              Clique para {{panelOpenStateCursos ? 'fechar' : 'abrir'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <h4>Cursos em andamento</h4>
+
+        <p>
+          - Formação Full Stack - Javascript+HTML+CSS+Node.js+React.js
+        </p>
+
+        <hr size="1" width="80%" color="#dbbaff">
+
+        <h4>Cursos concluídos</h4>
+
+        <p>
+          - Formação Angular - Javascript/HTML5/CSS3/Typescript/Git/Angula - Entry Point BRQ (480 horas) <br>
+          - Java 8 Programmer Back-end – Impacta Unidade Paulista (100 horas). <br>
+          - Power BI - Udemy, <br>
+          - Segurança da informação – Fundação Bradesco, <br>
+          - Robótica Prática Utilizando a Plataforma Arduino – UMC, <br>
+          - Fundamentos de Lógica de Programação – Fundação Bradesco, <br>
+          - Introdução à Programação Orientada a Objetos-POO – Fundação Bradesco, <br>
+          - Microsoft Excel Avançado – Fundação Bradesco, <br>
+          - Pacote Office – SENAI, <br>
+        </p>
+
+
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <mat-accordion >
+      <mat-expansion-panel (opened)="panelOpenStateCerti = true"
+                            (closed)="panelOpenStateCerti = false"
+                            id="perfilAccor" >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>school</mat-icon>  <span>Certificados</span>    
+          </mat-panel-title>
+          <mat-panel-description>
+              Clique para {{panelOpenStateCerti ? 'fechar' : 'abrir'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <h4>Certificados</h4>
+
+        <div id="imgCentro">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Formação Angular</mat-card-title>
+              <mat-card-subtitle>Programa entry point BRQ</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/CV/Certificado Angular.png">
+            <mat-card-content>
               <p>
-                -Procuro uma Oportunidade para trabalhar com Front-end, tenho formação em Angular pela BRQ, e estou cursando atualmente uma formação em React, procuro sempre estudar nas horas livres</p>
-
-              <p>
-                -Tenho facilidade na autoaprendizagem, o que facilita quando o ensino é remoto em plataformas de ensino como Alura, Rocketseat, Udemy e mais.
+                Certificado formação Angular - programa entry point BRQ
               </p>
-
-              <p>
-                -Tenho espírito colaborativo, muita vontade de ajudar e aprender, ótimo relacionamento interpessoal, prezo pelo trabalho em equipe, sou disciplinado, organizado e tenho habilidade para lidar com imprevistos
-              </p>
-            </mat-expansion-panel>
-        </mat-accordion>
-
-        <mat-accordion >
-            <mat-expansion-panel (opened)="panelOpenStateExp = true"
-                                 (closed)="panelOpenStateExp = false" >
-              <mat-expansion-panel-header>
-                <mat-panel-title>
-                  <li>Experiências</li> 
-                </mat-panel-title>
-                <mat-panel-description>
-                    Clique para {{panelOpenStateExp ? 'fechar' : 'abrir'}}
-                </mat-panel-description>
-              </mat-expansion-panel-header>
-
-              <h4>Promotor de merchandising</h4>
-              <h5>Unilever Brasil -Dez/2020 - Atual</h5>
-
-              <p>
-                Responsável direto pelo atendimento e merchandising do cliente Assai Jaguaré, ajudando no sell in da Unilever no cliente, aumento de ticket médio na loja, Elaborar planilhas de desempenho de toda a equipe para melhor atingimento nas premiações do time. <br> 
-                Responsável pela confecção de backlight, o que ajuda a visibilidade e a venda dos produtos; <br>
-                - Atualmente elaborando um projeto de TI com base em cursos e faculdade que fiz para melhorar a comunicação do PDV com o escritório de merchandising da Unilever.
-              </p>
-
-              <hr size="1" width="80%" color="#dbbaff">
-
-              <h4>Freelancer jul/2018 - Fev/2019</h4>
-              <h5>Imobiliária / Loja Ortobom</h5>
-
-              <p>
-                - Imobiliária; Lançamento de Notas Fiscais em sistema integrado, extraindo relatórios de custos, desde taxas bancárias até bonificações
-                - Loja Ortobom: Auxiliar de loja, responsável pela organização do estoque, exposição e entrega de produtos até a instalação dos itens nos clientes <br>
-                - Atuação como motorista particular e ajudante de carga e descarga.
-              </p>
-
-              <hr size="1" width="80%" color="#dbbaff">
-
-              <h4>Promotor de vendas</h4>
-              <h5>Cagiu - Distribuidora da Danone Ltda (abr/2016 - jul/2018)</h5>
-
-              <p>
-                Responsável direto pelo atendimento e merchandising dos clientes potenciais da distribuidora com report direto para o Supervisor Geral e contato com a equipe de vendas; Realização de levantamento de oportunidade para aumento de vendas verificando rupturas dos produtos nos clientes; Negociação e montagem de pontos extras para maior visibilidade nas lojas; Pesquisas de mercado e tendências de vendas para viabilizar metas.
-              </p>
-
-              <hr size="1" width="80%" color="#dbbaff">
-
-              <h4>Promotor de vendas</h4>
-              <h5>Gasparetto & Vasco - Distribuidora da Danone Ltda (fev/2013 - nov/2015)</h5>
-
-              <p>
-                Responsável por controlar e movimentar itens críticos no PDV, para efetivação do FIFO nos clientes e na Distribuidora; Atuar diretamente no PDV, realizando abastecimento seguindo padrões e regras indicados pela indústria, gerando maior visibilidade da marca no mercado; Controlar todo o estoque da distribuidora, com report direto ao proprietário.
-              </p>
-
-            </mat-expansion-panel>
-        </mat-accordion>
-
-        <mat-accordion >
-            <mat-expansion-panel (opened)="panelOpenStateEducacao = true"
-                                 (closed)="panelOpenStateEducacao = false"
-                                 id="perfilAccor" >
-              <mat-expansion-panel-header>
-                <mat-panel-title>
-                  <li>Educação</li>
-                </mat-panel-title>
-                <mat-panel-description>
-                    Clique para {{panelOpenStateEducacao ? 'fechar' : 'abrir'}}
-                </mat-panel-description>
-              </mat-expansion-panel-header>
-
-              <h4>Formação Acadêmica</h4>
-
-              <p>
-                -  Formado em Análise e Desenvolvimento de Sistemas <br>
-                Universidade Mogi das Cruzes – UMC
-              </p>
-
-              <hr size="1" width="80%" color="#dbbaff">
-
-              <h4>Inglês</h4>
-
-              <p>- CNA, nivel intermediário</p>
-              <p>Atualmente estou fazendo aulas particulares duas vezes na semana (segunda e quarta) </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
 
 
-            </mat-expansion-panel>
-        </mat-accordion>
+      </mat-expansion-panel>
+    </mat-accordion>
 
-        <mat-accordion >
-            <mat-expansion-panel (opened)="panelOpenStateCursos = true"
-                                 (closed)="panelOpenStateCursos = false" >
-              <mat-expansion-panel-header>
-                <mat-panel-title>
-                  <li>Cursos e Especializações</li>
-                </mat-panel-title>
-                <mat-panel-description>
-                    Clique para {{panelOpenStateCursos ? 'fechar' : 'abrir'}}
-                </mat-panel-description>
-              </mat-expansion-panel-header>
+    <mat-accordion >
+      <mat-expansion-panel (opened)="panelOpenStateDown = true"
+                            (closed)="panelOpenStateDown = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>get_app</mat-icon> <span>Download do PDF</span>
+          </mat-panel-title>
+          <mat-panel-description>
+              Clique para {{panelOpenStateDown ? 'fechar' : 'abrir'}} 
+          </mat-panel-description>
+        </mat-expansion-panel-header>
 
-              <h4>Cursos em andamento</h4>
+        <h4>Download do meu curriculo</h4>
+        <h5>Me ajude por favor, compartilhe este portfolio com alguem ou meu curriculo, vai me ajudar muito s2</h5>
+        <h6>Ao clicar no botão abaixo voce vai fazer download do meu cv</h6>
 
-              <p>
-                - Formação Full Stack - Javascript+HTML+CSS+Node.js+React.js
-              </p>
+        <button mat-flat-button color="primary"><a href="../../assets/CV/RAFAEL-GASPARETTO-CV.pdf" download="RAFAEL-GASPARETTO-CV.pdf">Curriculo</a></button>
 
-              <hr size="1" width="80%" color="#dbbaff">
+      </mat-expansion-panel>
+    </mat-accordion>
 
-              <h4>Cursos concluídos</h4>
+    <div class="back-to-top" href="#" (click)="irAoTopo()" ></div>
 
-              <p>
-                - Formação Angular - Javascript/HTML5/CSS3/Typescript/Git/Angula - Entry Point BRQ <br>
-                - Java 8 Programmer Back-end – Impacta Unidade Paulista (100 horas). <br>
-                - Power BI - Udemy, <br>
-                - Segurança da informação – Fundação Bradesco, <br>
-                - Robótica Prática Utilizando a Plataforma Arduino – UMC, <br>
-                - Fundamentos de Lógica de Programação – Fundação Bradesco, <br>
-                - Introdução à Programação Orientada a Objetos-POO – Fundação Bradesco, <br>
-                - Microsoft Excel Avançado – Fundação Bradesco, <br>
-                - Pacote Office – SENAI, <br>
-              </p>
-
-
-            </mat-expansion-panel>
-        </mat-accordion>
-
-        <mat-accordion >
-            <mat-expansion-panel (opened)="panelOpenStateDown = true"
-                                 (closed)="panelOpenStateDown = false"
-                                 id="perfilAccor" >
-              <mat-expansion-panel-header>
-                <mat-panel-title>
-                  <li>Download do PDF</li>
-                </mat-panel-title>
-                <mat-panel-description>
-                    Clique para {{panelOpenStateDown ? 'fechar' : 'abrir'}} 
-                </mat-panel-description>
-              </mat-expansion-panel-header>
-
-              <h4>Download do meu curriculo</h4>
-              <h5>Me ajude por favor, compartilhe este portfolio com alguem ou meu curriculo, vai me ajudar muito s2</h5>
-              <h6>Ao clicar no botão abaixo voce vai fazer download do meu cv</h6>
-
-              <button mat-flat-button color="primary"><a href="../../assets/CV/RAFAEL-GASPARETTO-CV.pdf" download="RAFAEL-GASPARETTO-CV.pdf">Curriculo</a></button>
-
-              
-              
-
-
-            </mat-expansion-panel>
-        </mat-accordion>
-
-    </main>
+  </main>
 
 </section>

@@ -28,6 +28,8 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { CurriculoComponent } from './curriculo/curriculo.component';
 import { BolosJuliaComponent } from './projetosConcluidos/bolos-julia/bolos-julia.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon'
 
 
 
@@ -62,7 +64,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatStepperModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatToolbarModule,
+    MatIconModule
 
   ],
   providers: [],
