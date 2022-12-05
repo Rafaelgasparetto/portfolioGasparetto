@@ -49,43 +49,54 @@
             <mat-accordion >
                 <mat-expansion-panel (opened)="listNav = true"
                                       (closed)="listNav = false">
-                  <mat-expansion-panel-header>
-                    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-                        <mat-icon id="menu">menu</mat-icon>
-                        <span>Menu</span>  
-                    </button>
+                    <mat-expansion-panel-header>
 
-                  </mat-expansion-panel-header>
-                  <ul class="listNav" >
+                        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                            <mat-icon id="menu">menu</mat-icon>
+                            <span>Menu</span>  
+                        </button>
 
-                    <li>
-                        <a routerLink="../home/"><mat-icon>home</mat-icon> <p>Home</p></a>
-                        
-                    </li>
-    
-                    <li>
-                        <a routerLink="../projetos"> <mat-icon>important_devices</mat-icon> <p>Projetos</p> </a>
-                    </li>
-    
-                    <li>
-                        <a routerLink="../apresentacao"> <mat-icon> import_contacts</mat-icon>  <p>Sobre mim</p> </a>
-                    </li>
-    
-                    <li>
-                        <a routerLink="../curriculo"><mat-icon>portrait</mat-icon> <p>Currículo</p> </a>
-                    </li>
-    
-                    <li>
-                        <a routerLink="../login/" (click)="Sair()"> <mat-icon>exit_to_app</mat-icon> <p>Sair</p> </a>
-                    </li>
-    
-                </ul>
+                    </mat-expansion-panel-header>
+                    
+                    <ul class="listNav" >
 
+                        <div >
+                            <li >
+                                <a routerLink="../home/"><mat-icon>home</mat-icon> <p>Home</p></a>
+                                
+                            </li>
+                        </div>
 
+                        <div>
+                            <li>
+                                <a routerLink="../projetos"> <mat-icon>important_devices</mat-icon> <p>Projetos</p> </a>
+                            </li>
+                        </div>
+
+                        <div>
+                            <li>
+                                <a routerLink="../apresentacao"> <mat-icon> import_contacts</mat-icon>  <p>Sobre mim</p> </a>
+                            </li>
+                        </div>
+
+                        <div>
+                            <li>
+                                <a routerLink="../curriculo"><mat-icon>portrait</mat-icon> <p>Currículo</p> </a>
+                            </li>
+                        </div>
+                    
+                        <div>
+                            <li>
+                                <a routerLink="../login/" (click)="Sair()"> <mat-icon>exit_to_app</mat-icon> <p>Sair</p> </a>
+                            </li>
+                        </div>
+
+    
+                    </ul>
 
                 </mat-expansion-panel>
 
-              </mat-accordion>
+            </mat-accordion>
 
 
         </nav>

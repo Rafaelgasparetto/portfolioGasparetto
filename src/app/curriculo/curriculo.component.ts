@@ -19,6 +19,7 @@ export class CurriculoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
   irAoTopo(){

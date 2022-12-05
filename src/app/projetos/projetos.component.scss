@@ -1,6 +1,6 @@
 section{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -10,11 +10,26 @@ section{
 }
 
 h1{
-    color: #dbbaff;
+    margin-top: 2%;
+    color: #8f3e9b;
+}
+
+#divArticle{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 article{
-    color: gray;
+    color: rgb(219, 186, 255);
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+article p{
+    font-size: large;
+    line-height:2.0em
 }
 
 .divProjetos{
@@ -63,3 +78,13 @@ mat-card:hover{
 a{
     text-decoration: none;
 }
+
+@media(max-width: 600px){
+
+    .divProjetos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+

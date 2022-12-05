@@ -42,6 +42,7 @@ export class HomeComponent implements OnInit {
           // console.log(usuario.sexo)
           this.nomeUsuario = usuario.nome;
           this.sexoUsuario = usuario.sexo;
+          
         },
         error: () =>{
 

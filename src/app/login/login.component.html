@@ -51,4 +51,8 @@
         </mat-card>
     </div>
 
+    <div class="spinner" *ngIf="loading | async" >
+        <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+    </div>
+
 </main>

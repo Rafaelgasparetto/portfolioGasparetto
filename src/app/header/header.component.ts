@@ -20,11 +20,18 @@ export class HeaderComponent implements OnInit {
     this.localStorage.GetAdmin().subscribe(Dadoadm=>{
       this.adm=Dadoadm
     })
+
+    this.listNav = false;
+    
   }
 
   Sair(){
     this.localStorage.Clear()
     this.router.navigate(['../login']);
+  }
+
+  fecharNav(){
+    this.listNav = false;
   }
 
 

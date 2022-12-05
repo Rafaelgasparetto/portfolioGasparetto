@@ -5,6 +5,7 @@ mat-toolbar{
     background-color: black;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 div:first-child img{
@@ -13,10 +14,11 @@ div:first-child img{
 }
 
 #navPrincipal{
-    width: 42vw;
+    width: 50vw;
     max-width: 60%;
     align-content: space-between;
-    // margin-right: 1%;   
+    // margin-right: 1%;
+       
 }
 
 nav ul{
@@ -89,5 +91,119 @@ span{
     color: #dbbaff;
 }
 
+// Tablet ------------------------------------------------------------------
+@media(max-width: 864px){
+
+    mat-toolbar{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 18vw;
+        background-color: black;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        // align-content: center;
+    }
 
 
+
+    #navPrincipal{
+        width: 57vw;
+        max-width: 60%;
+        align-content: space-between;
+        // margin-right: 1%;
+        flex-wrap: wrap;   
+    }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+        justify-content:space-between;
+        // gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    nav ul li{
+        display: flex;
+        justify-content: space-between;
+        margin: 1%
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #dbbaff;
+        font-size:medium;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+//  Mobile -----------------------------------------------------------------------
+@media(max-width: 600px){
+
+    mat-toolbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 3%;
+        flex-wrap: wrap;   
+        
+    }
+
+    // .mat-content{
+    //     display: flex;
+    //     flex: 1;
+    //     overflow: hidden;
+    //     justify-content: center;
+    //     flex-direction: row;
+    // }
+
+    .listNav{
+        display: flex;
+        
+    }
+
+    div:first-child img{
+        display: none;
+    }
+
+    #navPrincipal{
+        display: flex;
+        width: 60vw;
+        max-width: 60%;
+        align-content: space-between;
+        // margin-right: 1%;
+        flex-wrap: wrap; 
+        z-index: 2;
+        justify-content: center; 
+    }
+
+    nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    nav ul li{
+        display: flex;
+        justify-content: space-between;
+        margin: 1%
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #dbbaff;
+        font-size:medium;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { UsuarioInterface } from '../model/usuario.model';
 import { LocalStorageService } from '../service/localStorage-service/local-storage.service';
@@ -18,13 +19,16 @@ export class LoginComponent implements OnInit {
   sexo!: string;
   usuarios: UsuarioInterface[] = [];
   firstFormGroup!: FormGroup 
-  secondFormGroup!: FormGroup 
+  secondFormGroup!: FormGroup
+  loading = this.usuarioService.loading;
 
   constructor(
     private formBuilder: FormBuilder,
     private usuarioService: UsuarioService,
     private router: Router,
-    private localStorage: LocalStorageService
+    private localStorage: LocalStorageService,
+    private snackBar: MatSnackBar
+
     ) { }
 
 
@@ -39,7 +43,8 @@ export class LoginComponent implements OnInit {
       
       },
       error:() => {
-        console.log("Erro ao ler usuarios");
+        // console.log("Erro ao ler usuarios");
+        this.alertaDados("falha");
       }
     })
     
@@ -60,7 +65,7 @@ export class LoginComponent implements OnInit {
 
     if(sexo == 'homem' || sexo == 'mulher' || sexo == 'semSexoDefinido'){ //verificar se esta com bug
 
-      this.nome = nome; // atribuição para a variavel global
+      this.nome = usuario.nome; // atribuição para a variavel global
       this.sexo = sexo; //atribuição para a variavel global
   
       this.localStorage.SalvarId(usuario.id) // puxar id do usuario logado
@@ -70,24 +75,30 @@ export class LoginComponent implements OnInit {
       this.localStorage.SalvarSexo(usuario.sexo) // puxar sexo do usuario logado
 
 
-      console.log(id);
-      console.log(nome);
-      console.log(sexo);
+
+      // console.log(id);
+      // console.log(nome);
+      // console.log(sexo);
+
+      this.usuarioService.showLoading();
 
       this.usuarioService.salvarUsuario(usuario).subscribe({
+        
         next: () =>{
-         console.log("Cadastrado Com sucesso");
+          // this.nome = usuario.nome;
+        //  console.log("Cadastrado Com sucesso");
          this.router.navigate(['/home']); //redirecionando para a pagina home
+        //  this.alertaDados("sucesso");
+         this.usuarioService.hideLoading();
         },
         error: () => {
+         this.usuarioService.hideLoading();
          console.log("erro ao cadastrar");
+         this.snackBar.open("falha");
         } 
       })
 
     }
-
-
-
 
   }
 
@@ -106,6 +117,35 @@ export class LoginComponent implements OnInit {
     maiorId++;
 
     return maiorId;
+  }
+
+
+  alertaDados(tipoExecucao: String){
+    // const alertaNome = this.nome;
+    switch (tipoExecucao) {
+      case "sucesso":
+        this.snackBar.open(`sucesso `, undefined, {
+          duration: 4000,
+          panelClass: ['snackbar-tema']
+        })
+      break;
+
+      case "falha":
+        this.snackBar.open("Falha", undefined, {
+          duration: 4000,
+          panelClass: ['snackbar-tema']
+        })
+      break;
+
+      default:
+        this.snackBar.open("Erro =(", undefined, {
+          duration: 4000,
+          panelClass: ['snackbar-tema']
+        })
+      break;
+
+    }
+
   }
 
 }

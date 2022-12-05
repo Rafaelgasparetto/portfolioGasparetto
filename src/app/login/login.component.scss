@@ -26,3 +26,7 @@ mat-card{
     height: auto;
 }
 
+:host ::ng-deep .mat-progress-spinner circle, .mat-spinner circle{
+    stroke:rgb(241, 137, 241) !important;
+}
+
