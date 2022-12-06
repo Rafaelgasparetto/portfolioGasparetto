@@ -7,7 +7,7 @@
 
     <div>
         <a routerLink="../home">
-            <img src="../../assets/src img logo/logoFundoPreto.gif" alt="">
+            <img src="assets/src img logo/logoFundoPreto.gif" alt="logo do portfolio, clique para ir para home">
         </a>
     </div>
 
@@ -20,31 +20,6 @@
         || router.routerState.snapshot.url == '/locadora' || router.routerState.snapshot.url == '/loc-car' || router.routerState.snapshot.url == '/bolos-julia'
         || router.routerState.snapshot.url == '/apresentacao' ">
  
-
-                <!-- <ul class="listNav" >
-
-                    <li>
-                        <a routerLink="../home/">Home</a>
-                    </li>
-    
-                    <li>
-                        <a routerLink="../projetos">Projetos</a>
-                    </li>
-    
-                    <li>
-                        <a routerLink="../apresentacao">Apresentação</a>
-                    </li>
-    
-                    <li>
-                        <a routerLink="../curriculo">Currículo</a>
-                    </li>
-    
-                    <li>
-                        <a routerLink="../login/" (click)="Sair()">Sair</a>
-                    </li>
-    
-                </ul> -->
-           
 
             <mat-accordion >
                 <mat-expansion-panel (opened)="listNav = true"
@@ -101,17 +76,14 @@
 
         </nav>
 
-
-
     </div>
 
 
-    
 </mat-toolbar>
 
 <header id="header_login" *ngIf="router.routerState.snapshot.url == '/login'">
 
-    <img src="../../assets/src img logo/logoFundoPreto.gif" alt="">
+    <img src="assets/src img logo/logoFundoPreto.gif" alt="Logo do portfolio">
 
     <nav id="nav_login">
         <h1>Olá! vamos nos conhecer? <br> Meu nome é Rafael Gasparetto, e o seu?</h1>
