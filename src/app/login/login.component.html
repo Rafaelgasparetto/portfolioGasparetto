@@ -23,7 +23,7 @@
                 </mat-step>
                 <mat-step [stepControl]="secondFormGroup">
                     <form [formGroup]="secondFormGroup">
-                    <ng-template matStepLabel>Como voce se indentifica?</ng-template>
+                    <ng-template matStepLabel>Como você se indentifica?</ng-template>
                     <mat-form-field>
                         <input class="hide" matInput  >
                         <mat-radio-group aria-label="Select an option" formControlName="sexo" required>
@@ -43,7 +43,7 @@
                     <p>Obrigado por se indentificar.</p>
                     <div>
                         <button mat-button matStepperPrevious>Back</button>
-                        <button mat-button type="submit" [disabled]="!firstFormGroup.valid" [disabled]="!secondFormGroup.valid" (click)="salvarDadosUsuario()">Home</button>
+                        <button mat-button type="submit" [disabled]="!firstFormGroup.valid" [disabled]="!secondFormGroup.valid" (click)="salvarDadosUsuario()">Ir ao portifolio</button>
                     </div>
                 </mat-step>
             </mat-vertical-stepper>
