@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatAccordion } from '@angular/material/expansion';
 import { Router } from '@angular/router';
 import { LocalStorageService } from '../service/localStorage-service/local-storage.service';
 
@@ -8,11 +9,14 @@ import { LocalStorageService } from '../service/localStorage-service/local-stora
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  @ViewChild(MatAccordion)
+  accordion: MatAccordion = new MatAccordion;
   adm:boolean=true;
   listNav = false;
   constructor(
     public router: Router,
     private localStorage: LocalStorageService
+    
   ) { }
 
   ngOnInit(): void {
@@ -21,8 +25,6 @@ export class HeaderComponent implements OnInit {
       this.adm=Dadoadm
     })
 
-    this.listNav = false;
-    
   }
 
   Sair(){
@@ -31,7 +33,7 @@ export class HeaderComponent implements OnInit {
   }
 
   fecharNav(){
-    this.listNav = false;
+    this.listNav = closed;
   }
 
 
