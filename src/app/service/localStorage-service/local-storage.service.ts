@@ -29,6 +29,8 @@ export class LocalStorageService {
   DataId= new BehaviorSubject<number>(this.id)
   nomeUsuario = new BehaviorSubject<string>(this.nome)
   sexoUsuario = new BehaviorSubject<string>(this.sexo)
+  // ingles=false;
+  // portugues=true;
 
   //------função para salvar o valor do id
   SalvarId($data:number){

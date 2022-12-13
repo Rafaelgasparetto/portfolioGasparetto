@@ -1,5 +1,6 @@
 import { normalizePassiveListenerOptions } from '@angular/cdk/platform';
 import { Component, OnInit } from '@angular/core';
+import { FooterComponent } from '../footer/footer.component';
 import { UsuarioInterface } from '../model/usuario.model';
 import { LocalStorageService } from '../service/localStorage-service/local-storage.service';
 import { UsuarioService } from '../service/usuario-service/usuario.service';
@@ -15,6 +16,9 @@ export class HomeComponent implements OnInit {
   usuario!: UsuarioInterface[];
   nomeUsuario ='';
   sexoUsuario='';
+  
+  // ingles:boolean=false;
+  // portugues:boolean=true;
 
 
   constructor(

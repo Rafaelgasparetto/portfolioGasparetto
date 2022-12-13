@@ -14,10 +14,40 @@ footer{
     // background-color: black;
 }
 
-div:first-child img{
-    width: 150px;
-    height: 150px;
+#divIdioma{
+    gap: 15px;
+    display: flex;
 }
+
+#divIdioma img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+.idioma{
+    width: auto;
+    height: auto;
+    background-color: black;
+    border: black;
+}
+
+.idioma:hover{
+    border: 1px solid #dbbaff;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    transform: translateY(-10px) scale(1.005) translateZ(0);
+    // box-shadow: 0 24px 36px rgba(255, 255, 255, 0.11);
+    // box-shadow: 0 24px 36px rgb(219, 186, 255, 0.20);
+    // color: #dbbaff;
+}
+
+.idioma img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
 
 div:last-child{
     margin-right: 1%;
@@ -37,6 +67,7 @@ div:last-child img{
         justify-content: center;
         background-color: black;
         align-items: center;
+        flex-wrap: wrap;
     }
 
 

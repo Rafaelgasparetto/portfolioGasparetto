@@ -3,10 +3,16 @@
 || router.routerState.snapshot.url == '/locadora' || router.routerState.snapshot.url == '/loc-car' || router.routerState.snapshot.url == '/bolos-julia'
 || router.routerState.snapshot.url == '/apresentacao' ">
 
-    <!-- <div >
-        <a routerLink="../home">
-            <img src="../../assets/src img logo/logoFundoPreto.gif" alt="" >
-        </a>
+    <!-- <div id="divIdioma">
+        
+        <button class="idioma" (click)="idiomaPortugues()">
+            <img src="../../assets/img-home/FlagBrasil.png" alt="Clique aqui para ver o portfolio me portugues">
+        </button>
+    
+        <button class="idioma" (click)="idiomaIngles()" >
+            <img src="../../assets//img-home/FlagEUA.png" alt="Clique aqui para ver o portfolio em Inglês">
+        </button>
+        
     </div> -->
 
     <div>
@@ -28,6 +34,18 @@
 
 <footer id="footerLogin " *ngIf="router.routerState.snapshot.url == '/login'|| router.routerState.snapshot.url == '/home' "  >
 
+    <!-- <div id="divIdioma">
+        
+        <button class="idioma" (click)="idiomaPortugues()">
+            <img src="../../assets/img-home/FlagBrasil.png" alt="Clique aqui para ver o portfolio me portugues">
+        </button>
+    
+        <button class="idioma" (click)="idiomaIngles()">
+            <img src="../../assets//img-home/FlagEUA.png" alt="Clique aqui para ver o portfolio em Inglês">
+        </button>
+        
+    </div> -->
+
     <div>
         <a href="https://www.linkedin.com/in/rafael-gasparetto/">
             <img src="assets/src img logo/Linkedin.jpg" alt="Clique aqui para conhecer meu Linkedin">
@@ -39,5 +57,8 @@
            <img src="assets/src img logo/whatsApp.png" alt="Clique aqui para falar comigo no WhatsApp"> 
         </a>
     </div>
+
+    
+
 
 </footer>
