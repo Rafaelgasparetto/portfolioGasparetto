@@ -148,15 +148,15 @@ span{
         align-content: center;
         align-items: center;
         justify-content: flex-start;
+        flex: 1;
     }
 
-    // .mat-content{
-    //     display: flex;
-    //     flex: 1;
-    //     overflow: hidden;
-    //     justify-content: center;
-    //     flex-direction: row;
-    // }
+    .mat-content{
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        overflow: hidden;
+    }
 
     .listNav{
         display: flex;

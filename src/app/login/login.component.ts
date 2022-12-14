@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
     this.usuarioService.lerUsuarios().subscribe({
       next: (usuarios: UsuarioInterface[]) => {
         this.usuarios = usuarios;
-        console.log(usuarios);
+        // console.log(usuarios);
       
       },
       error:() => {
