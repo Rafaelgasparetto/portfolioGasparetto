@@ -23,13 +23,13 @@
                 </mat-step>
                 <mat-step [stepControl]="secondFormGroup">
                     <form [formGroup]="secondFormGroup">
-                    <ng-template matStepLabel>Como você se indentifica?</ng-template>
+                    <ng-template matStepLabel>Como você se identifica?</ng-template>
                     <mat-form-field>
                         <input class="hide" matInput  >
                         <mat-radio-group aria-label="Select an option" formControlName="sexo" required>
                             <mat-radio-button value="homem" checked="false">Homem</mat-radio-button>
                             <mat-radio-button value="mulher" checked="false">Mulher</mat-radio-button>
-                            <mat-radio-button value="semSexoDefinido" checked="true" >Não quero me indentificar</mat-radio-button>
+                            <mat-radio-button value="semSexoDefinido" checked="true" >Não quero me identificar</mat-radio-button>
                         </mat-radio-group>
                     </mat-form-field>
                     <div>
