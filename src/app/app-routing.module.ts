@@ -5,6 +5,7 @@ import { CurriculoComponent } from './curriculo/curriculo.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ProjetosComponent } from './projetos/projetos.component';
+import { BarberShopComponent } from './projetosConcluidos/barber-shop/barber-shop.component';
 import { BolosJuliaComponent } from './projetosConcluidos/bolos-julia/bolos-julia.component';
 import { DivinaFashionComponent } from './projetosConcluidos/divina-fashion/divina-fashion.component';
 import { JogoAdvinhaComponent } from './projetosConcluidos/jogo-advinha/jogo-advinha.component';
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path: 'sync-tur', component:SyncTurComponent},
   {path: 'bolos-julia', component:BolosJuliaComponent},
   {path: 'apresentacao', component:ApresentacaoComponent},
-  {path: 'curriculo', component: CurriculoComponent}
+  {path: 'curriculo', component: CurriculoComponent},
+  {path: 'barber-shop', component: BarberShopComponent}
   
 ];
 

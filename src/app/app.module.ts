@@ -31,6 +31,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { BarberShopComponent } from './projetosConcluidos/barber-shop/barber-shop.component';
 
 
 
@@ -49,7 +50,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     LocCarComponent,
     ApresentacaoComponent,
     CurriculoComponent,
-    BolosJuliaComponent
+    BolosJuliaComponent,
+    BarberShopComponent
   ],
   imports: [
     BrowserModule,
