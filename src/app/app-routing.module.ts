@@ -1,3 +1,4 @@
+import { VirtualStoreComponent } from './projetosConcluidos/virtual-store/virtual-store.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
@@ -26,7 +27,8 @@ const routes: Routes = [
   {path: 'bolos-julia', component:BolosJuliaComponent},
   {path: 'apresentacao', component:ApresentacaoComponent},
   {path: 'curriculo', component: CurriculoComponent},
-  {path: 'barber-shop', component: BarberShopComponent}
+  {path: 'barber-shop', component: BarberShopComponent},
+  {path: 'virtual-store', component:VirtualStoreComponent}
   
 ];
 

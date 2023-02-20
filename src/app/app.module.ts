@@ -32,6 +32,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { BarberShopComponent } from './projetosConcluidos/barber-shop/barber-shop.component';
+import { VirtualStoreComponent } from './projetosConcluidos/virtual-store/virtual-store.component';
 
 
 
@@ -51,7 +52,8 @@ import { BarberShopComponent } from './projetosConcluidos/barber-shop/barber-sho
     ApresentacaoComponent,
     CurriculoComponent,
     BolosJuliaComponent,
-    BarberShopComponent
+    BarberShopComponent,
+    VirtualStoreComponent
   ],
   imports: [
     BrowserModule,
