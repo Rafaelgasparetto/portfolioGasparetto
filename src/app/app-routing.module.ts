@@ -1,3 +1,4 @@
+import { CooperadoComponent } from './projetosConcluidos/cooperado/cooperado.component';
 import { VirtualStoreComponent } from './projetosConcluidos/virtual-store/virtual-store.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path: 'apresentacao', component:ApresentacaoComponent},
   {path: 'curriculo', component: CurriculoComponent},
   {path: 'barber-shop', component: BarberShopComponent},
-  {path: 'virtual-store', component:VirtualStoreComponent}
+  {path: 'virtual-store', component:VirtualStoreComponent},
+  {path: 'cooperado', component: CooperadoComponent}
   
 ];
 

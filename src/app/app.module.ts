@@ -33,6 +33,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { BarberShopComponent } from './projetosConcluidos/barber-shop/barber-shop.component';
 import { VirtualStoreComponent } from './projetosConcluidos/virtual-store/virtual-store.component';
+import { CooperadoComponent } from './projetosConcluidos/cooperado/cooperado.component';
 
 
 
@@ -53,7 +54,8 @@ import { VirtualStoreComponent } from './projetosConcluidos/virtual-store/virtua
     CurriculoComponent,
     BolosJuliaComponent,
     BarberShopComponent,
-    VirtualStoreComponent
+    VirtualStoreComponent,
+    CooperadoComponent
   ],
   imports: [
     BrowserModule,

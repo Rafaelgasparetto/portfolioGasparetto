@@ -7,11 +7,13 @@ section{
     // background-color: #444;
     background-color: black;
     justify-content: space-evenly;
+    font-family: 'Tilt Neon', cursive;
 }
 
 h1{
     margin-top: 2%;
     color: #8f3e9b;
+    font-family: 'Tilt Neon', cursive;
 }
 
 #divArticle{
@@ -25,16 +27,19 @@ article{
     max-width: 600px;
     text-align: center;
     margin-bottom: 3%;
+    font-family: 'Tilt Neon', cursive;
 }
 
 article p{
     font-size: large;
-    line-height:2.0em
+    line-height:2.0em;
+    font-family: 'Tilt Neon', cursive;
 }
 
 .divProjetos{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 3%;
 }
 
 mat-card{
@@ -46,7 +51,12 @@ mat-card{
     flex-direction:column;
     justify-content: center;
     justify-items: center;
+    font-family: 'Tilt Neon', cursive;
     // margin-top: 1%;
+}
+
+mat-card span{
+    font-size: 0.7rem;
 }
 
 mat-card img{

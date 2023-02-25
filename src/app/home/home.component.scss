@@ -9,6 +9,7 @@ section{
     background-color: black;
     justify-content: space-evenly;
     justify-items: center;
+    font-family: 'Tilt Neon', cursive;
 }
 
 #divCentro{
@@ -30,18 +31,21 @@ section{
     display: flex;
     align-items: center;
     background-color: black;
+    
 
 }
 
 #grade{
     text-align: center;
-    line-height:2.5em
+    line-height:2.5em;
+    
 }
 
 #divArticle{
     display: flex;
     text-align: center;
     justify-content: center;
+    
 }
 
 article{
@@ -49,10 +53,12 @@ article{
     max-width: 600px;
     text-align: center;
     margin-bottom: 3%;
+    font-family: 'Tilt Neon', cursive;
 }
 
 p{
     font-size: large;
+    font-family: 'Tilt Neon', cursive;
 }
 
 #container{
@@ -64,6 +70,7 @@ p{
 
 h2{
 color: white;
+
 }
 
 #imgHome{
@@ -74,6 +81,7 @@ color: white;
 
 h1{
     color: #8f3e9b;
+    font-family: 'Tilt Neon', cursive;
 }
 
 .cards{
@@ -87,6 +95,7 @@ h1{
 }
 
 .cards img{
+    padding-bottom: 15px;
     width: 150px;
     height: 150px;
     border-radius: 100%;
@@ -96,15 +105,17 @@ h1{
 .cards:hover{
     // border: 1px solid rgb(219, 186, 255);
     // border-radius: 100px;
-    transition: all 0.3s ease-out;
-    transform: translateY(-10px) scale(1.005) translateZ(0);
-    box-shadow: 0px 15px 15px rgba(255, 255, 255, 0.11);
-    color: #8f3e9b;;
+    transition: all 0.5s ease-out;
+    transform: translateY(-15px) scale(1.005) translateZ(0);
+    box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.30);
+    color: #8f3e9b;
+    font-family: 'Tilt Neon', cursive;
     
 }
 
 a{
     text-decoration: none;
+    
 }
 
 
